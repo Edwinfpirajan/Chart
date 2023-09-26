@@ -1,10 +1,26 @@
+@import url('https://fonts.googleapis.com/css2?family=VT323&display=swap');
 
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', 'VT323';
+}
+.login{
+  display: none;
+  position: fixed;
+  background-image: url('./assets/bg-login.png');
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  width: 100%;
+}
 
 .login-box {
   position: absolute;
   top: 50%;
   left: 50%;
-  width: 400px;
+  width:85%;
   padding: 40px;
   transform: translate(-50%, -50%);
   background: rgba(0,0,0,.5);
@@ -158,4 +174,56 @@
   }
 }
 
+.container{
+  display: none !important;
+  position: fixed;
+  background-image: url('./assets/bg.png');
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  width: 100%;
+  color: #fff;
+}
 
+.gallery{
+  margin-top: 30px;
+  width: 90%;
+}
+
+@keyframes shake {
+  0%, 100% { transform: translateY(0); }
+  25%, 75% { transform: translateY(10px); } 
+}
+
+.antena {
+  width: 150px;
+  margin-top: 30px;
+  animation: shake 2s .5s ease-in-out infinite; 
+}
+
+.carta-container{
+  position: fixed;
+  width: 100%;
+  height: 100vh;
+}
+.carta-box{
+  /* position: fixed; */
+  background-image: url('./assets/bg-chart.png');
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  width: 100vw;
+  height: 100vh;
+}
+
+.text{
+  border: 5px solid blue;
+  display: flex;
+  justify-content: center;
+  padding-top: 50px;
+  color: #359E35;
+  font-family: 'VT323', sans-serif !important;
+  font-size: 1.2em;
+  font-weight: 100;
+  width: 80%;
+  height: 80% !important;
+}
